@@ -1,22 +1,9 @@
+## NewOne_Edu Service 
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+### Daily Work 
+02.10 - C9를 통한  Node 기본 세팅.(master branch)
 
+package.json 참조(gitignore 파일로 인한 node_modules폴더는 저장소에 올라가지 않음. 필수 패키지인경우 반드시 package.json을 통한 관리) 
 
-Welcome to your Node.js project on Cloud9 IDE!
+작업시 git flow 구조 참조. (https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/)
 
-This chat example showcases how to use `socket.io` with a static `express` server.
-
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
