@@ -1,0 +1,1034 @@
+/* font */
+/* basic margin, padding */
+/* the value can be css margin styles */
+/* the value can be css padding styles */
+/* frame */
+/* grid */
+/* It makes (max-width: 479px), (min-width: 480px) and (max-width: 719px), (min-width: 720px) and (max-width: 1023px), and so on.. */
+/* If this has one value, all grid columns has same gutter size regardless of users environment. If not, It must have same array index with $gridbreakpoints_query */
+/* If this has one value, all grid has same width regardless of users environment. It must have same array index with $gridbreakpoints_query  */
+/* The number of columns. */
+/* navigation bar */
+/* 'top', 'right', 'bottom', 'left' are available and other values are for modifying direct  */
+/* it will be navigation_bar's width or height depending on the value of $nav_position */
+/* main section */
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+html, body, section, article, footer, nav, header, div, p, blockquote, ul, ol, li, code, pre, aside, dl, dt, dd, form, frame, iframe, label, table, tbody, thead, tr, th, td, textarea, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span, img, a, q, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.korean {
+  font-family: 'Godo', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.13rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: 1.13rem;
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.h5 {
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.h6 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+/* font */
+/* basic margin, padding */
+/* the value can be css margin styles */
+/* the value can be css padding styles */
+/* frame */
+/* grid */
+/* It makes (max-width: 479px), (min-width: 480px) and (max-width: 719px), (min-width: 720px) and (max-width: 1023px), and so on.. */
+/* If this has one value, all grid columns has same gutter size regardless of users environment. If not, It must have same array index with $gridbreakpoints_query */
+/* If this has one value, all grid has same width regardless of users environment. It must have same array index with $gridbreakpoints_query  */
+/* The number of columns. */
+/* navigation bar */
+/* 'top', 'right', 'bottom', 'left' are available and other values are for modifying direct  */
+/* it will be navigation_bar's width or height depending on the value of $nav_position */
+/* main section */
+@media screen and (max-width: 479px) {
+  .nav {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 719px) {
+  .nav {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .nav {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+  }
+}
+
+.nav {
+  color: #0070ff;
+  font-weight: 600;
+  border-right: 1px solid #dfdfdf;
+}
+
+.nav .main-category-inner {
+  background-color: #0080ff;
+  font-size: 1.0rem;
+  color: white;
+}
+
+.nav .main-category-wrapper {
+  border-top: 1px solid #dfdfdf;
+}
+
+.nav .main-category {
+  margin: 0;
+}
+
+.nav .main-category div {
+  padding: 12px 0 12px 10px;
+}
+
+.nav .sub-category-container {
+  margin: 0;
+}
+
+.nav .sub-category-wrapper {
+  border-top: 1px solid #dfdfdf;
+  text-align: right;
+}
+
+.nav .main-category-wrapper:last-child .sub-category-wrapper:last-child {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.nav .link-outer:hover {
+  background-color: #0080ff;
+}
+
+.nav .link-inner {
+  background-color: white;
+}
+
+.nav .link-inner {
+  padding: 12px 20px 12px 0;
+  position: relative;
+  top: 0;
+  right: 6px;
+  bottom: 0;
+  margin-left: 6px;
+}
+
+.nav .link-inner:hover {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* font */
+/* basic margin, padding */
+/* the value can be css margin styles */
+/* the value can be css padding styles */
+/* frame */
+/* grid */
+/* It makes (max-width: 479px), (min-width: 480px) and (max-width: 719px), (min-width: 720px) and (max-width: 1023px), and so on.. */
+/* If this has one value, all grid columns has same gutter size regardless of users environment. If not, It must have same array index with $gridbreakpoints_query */
+/* If this has one value, all grid has same width regardless of users environment. It must have same array index with $gridbreakpoints_query  */
+/* The number of columns. */
+/* navigation bar */
+/* 'top', 'right', 'bottom', 'left' are available and other values are for modifying direct  */
+/* it will be navigation_bar's width or height depending on the value of $nav_position */
+/* main section */
+.grid-container {
+  margin: auto;
+}
+
+.grid-container .row {
+  display: block;
+}
+
+.grid-container .row [class*=col-] {
+  display: block;
+  float: left;
+}
+
+.row:after {
+  display: block;
+  content: '';
+  clear: left;
+}
+
+@media screen and (max-width: 479px) {
+  .grid-container {
+    width: 100%;
+  }
+  .grid-container .row .col-xs-1 {
+    width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xs-1 {
+    position: relative;
+    left: 25%;
+  }
+  .grid-container .row .col-xs-2 {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xs-2 {
+    position: relative;
+    left: 50%;
+  }
+  .grid-container .row .col-xs-3 {
+    width: 75%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xs-3 {
+    position: relative;
+    left: 75%;
+  }
+  .grid-container .row .col-xs-4 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xs-4 {
+    position: relative;
+    left: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 719px) {
+  .grid-container {
+    width: 100%;
+  }
+  .grid-container .row .col-s-1 {
+    width: 10%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-1 {
+    position: relative;
+    left: 10%;
+  }
+  .grid-container .row .col-s-2 {
+    width: 20%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-2 {
+    position: relative;
+    left: 20%;
+  }
+  .grid-container .row .col-s-3 {
+    width: 30%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-3 {
+    position: relative;
+    left: 30%;
+  }
+  .grid-container .row .col-s-4 {
+    width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-4 {
+    position: relative;
+    left: 40%;
+  }
+  .grid-container .row .col-s-5 {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-5 {
+    position: relative;
+    left: 50%;
+  }
+  .grid-container .row .col-s-6 {
+    width: 60%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-6 {
+    position: relative;
+    left: 60%;
+  }
+  .grid-container .row .col-s-7 {
+    width: 70%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-7 {
+    position: relative;
+    left: 70%;
+  }
+  .grid-container .row .col-s-8 {
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-8 {
+    position: relative;
+    left: 80%;
+  }
+  .grid-container .row .col-s-9 {
+    width: 90%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-9 {
+    position: relative;
+    left: 90%;
+  }
+  .grid-container .row .col-s-10 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-s-10 {
+    position: relative;
+    left: 100%;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .grid-container {
+    width: 100%;
+  }
+  .grid-container .row .col-md-1 {
+    width: 10%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-1 {
+    position: relative;
+    left: 10%;
+  }
+  .grid-container .row .col-md-2 {
+    width: 20%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-2 {
+    position: relative;
+    left: 20%;
+  }
+  .grid-container .row .col-md-3 {
+    width: 30%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-3 {
+    position: relative;
+    left: 30%;
+  }
+  .grid-container .row .col-md-4 {
+    width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-4 {
+    position: relative;
+    left: 40%;
+  }
+  .grid-container .row .col-md-5 {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-5 {
+    position: relative;
+    left: 50%;
+  }
+  .grid-container .row .col-md-6 {
+    width: 60%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-6 {
+    position: relative;
+    left: 60%;
+  }
+  .grid-container .row .col-md-7 {
+    width: 70%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-7 {
+    position: relative;
+    left: 70%;
+  }
+  .grid-container .row .col-md-8 {
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-8 {
+    position: relative;
+    left: 80%;
+  }
+  .grid-container .row .col-md-9 {
+    width: 90%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-9 {
+    position: relative;
+    left: 90%;
+  }
+  .grid-container .row .col-md-10 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-md-10 {
+    position: relative;
+    left: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .grid-container {
+    width: 100%;
+  }
+  .grid-container .row .col-lg-1 {
+    width: 5%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-1 {
+    position: relative;
+    left: 5%;
+  }
+  .grid-container .row .col-lg-2 {
+    width: 10%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-2 {
+    position: relative;
+    left: 10%;
+  }
+  .grid-container .row .col-lg-3 {
+    width: 15%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-3 {
+    position: relative;
+    left: 15%;
+  }
+  .grid-container .row .col-lg-4 {
+    width: 20%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-4 {
+    position: relative;
+    left: 20%;
+  }
+  .grid-container .row .col-lg-5 {
+    width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-5 {
+    position: relative;
+    left: 25%;
+  }
+  .grid-container .row .col-lg-6 {
+    width: 30%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-6 {
+    position: relative;
+    left: 30%;
+  }
+  .grid-container .row .col-lg-7 {
+    width: 35%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-7 {
+    position: relative;
+    left: 35%;
+  }
+  .grid-container .row .col-lg-8 {
+    width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-8 {
+    position: relative;
+    left: 40%;
+  }
+  .grid-container .row .col-lg-9 {
+    width: 45%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-9 {
+    position: relative;
+    left: 45%;
+  }
+  .grid-container .row .col-lg-10 {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-10 {
+    position: relative;
+    left: 50%;
+  }
+  .grid-container .row .col-lg-11 {
+    width: 55%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-11 {
+    position: relative;
+    left: 55%;
+  }
+  .grid-container .row .col-lg-12 {
+    width: 60%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-12 {
+    position: relative;
+    left: 60%;
+  }
+  .grid-container .row .col-lg-13 {
+    width: 65%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-13 {
+    position: relative;
+    left: 65%;
+  }
+  .grid-container .row .col-lg-14 {
+    width: 70%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-14 {
+    position: relative;
+    left: 70%;
+  }
+  .grid-container .row .col-lg-15 {
+    width: 75%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-15 {
+    position: relative;
+    left: 75%;
+  }
+  .grid-container .row .col-lg-16 {
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-16 {
+    position: relative;
+    left: 80%;
+  }
+  .grid-container .row .col-lg-17 {
+    width: 85%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-17 {
+    position: relative;
+    left: 85%;
+  }
+  .grid-container .row .col-lg-18 {
+    width: 90%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-18 {
+    position: relative;
+    left: 90%;
+  }
+  .grid-container .row .col-lg-19 {
+    width: 95%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-19 {
+    position: relative;
+    left: 95%;
+  }
+  .grid-container .row .col-lg-20 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-lg-20 {
+    position: relative;
+    left: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .grid-container {
+    width: 100%;
+  }
+  .grid-container .row .col-xl-1 {
+    width: 5%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-1 {
+    position: relative;
+    left: 5%;
+  }
+  .grid-container .row .col-xl-2 {
+    width: 10%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-2 {
+    position: relative;
+    left: 10%;
+  }
+  .grid-container .row .col-xl-3 {
+    width: 15%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-3 {
+    position: relative;
+    left: 15%;
+  }
+  .grid-container .row .col-xl-4 {
+    width: 20%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-4 {
+    position: relative;
+    left: 20%;
+  }
+  .grid-container .row .col-xl-5 {
+    width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-5 {
+    position: relative;
+    left: 25%;
+  }
+  .grid-container .row .col-xl-6 {
+    width: 30%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-6 {
+    position: relative;
+    left: 30%;
+  }
+  .grid-container .row .col-xl-7 {
+    width: 35%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-7 {
+    position: relative;
+    left: 35%;
+  }
+  .grid-container .row .col-xl-8 {
+    width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-8 {
+    position: relative;
+    left: 40%;
+  }
+  .grid-container .row .col-xl-9 {
+    width: 45%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-9 {
+    position: relative;
+    left: 45%;
+  }
+  .grid-container .row .col-xl-10 {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-10 {
+    position: relative;
+    left: 50%;
+  }
+  .grid-container .row .col-xl-11 {
+    width: 55%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-11 {
+    position: relative;
+    left: 55%;
+  }
+  .grid-container .row .col-xl-12 {
+    width: 60%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-12 {
+    position: relative;
+    left: 60%;
+  }
+  .grid-container .row .col-xl-13 {
+    width: 65%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-13 {
+    position: relative;
+    left: 65%;
+  }
+  .grid-container .row .col-xl-14 {
+    width: 70%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-14 {
+    position: relative;
+    left: 70%;
+  }
+  .grid-container .row .col-xl-15 {
+    width: 75%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-15 {
+    position: relative;
+    left: 75%;
+  }
+  .grid-container .row .col-xl-16 {
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-16 {
+    position: relative;
+    left: 80%;
+  }
+  .grid-container .row .col-xl-17 {
+    width: 85%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-17 {
+    position: relative;
+    left: 85%;
+  }
+  .grid-container .row .col-xl-18 {
+    width: 90%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-18 {
+    position: relative;
+    left: 90%;
+  }
+  .grid-container .row .col-xl-19 {
+    width: 95%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-19 {
+    position: relative;
+    left: 95%;
+  }
+  .grid-container .row .col-xl-20 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .grid-container .row .push-xl-20 {
+    position: relative;
+    left: 100%;
+  }
+}
+
+/* font */
+/* basic margin, padding */
+/* the value can be css margin styles */
+/* the value can be css padding styles */
+/* frame */
+/* grid */
+/* It makes (max-width: 479px), (min-width: 480px) and (max-width: 719px), (min-width: 720px) and (max-width: 1023px), and so on.. */
+/* If this has one value, all grid columns has same gutter size regardless of users environment. If not, It must have same array index with $gridbreakpoints_query */
+/* If this has one value, all grid has same width regardless of users environment. It must have same array index with $gridbreakpoints_query  */
+/* The number of columns. */
+/* navigation bar */
+/* 'top', 'right', 'bottom', 'left' are available and other values are for modifying direct  */
+/* it will be navigation_bar's width or height depending on the value of $nav_position */
+/* main section */
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .main-section {
+    padding-left: 220px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-section {
+    padding-left: 300px;
+  }
+}
+
+html, body {
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container .sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #f4f4f4;
+}
+
+.container .grid-container {
+  padding: 30px 30px 20px 30px;
+}
+
+.container .grid-container .row {
+  margin-bottom: 30px;
+}
+
+.container pre {
+  font-family: 'Gothic', sans-serif;
+}
+
+.container .clear {
+  display: block;
+}
+
+.container .clear::after {
+  display: block;
+  content: '';
+  clear: left;
+}
+
+.container .float {
+  float: left;
+  display: block;
+  width: 50%;
+}
+
+.container .nav .log-in {
+  display: block;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.container .nav .center {
+  text-align: center;
+}
+
+.container .main-section .main-title {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.container .main-section .card {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .main-section .card li {
+  background-color: white;
+  line-height: 1.2;
+  font-size: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container .main-section .card li .title {
+  font-family: 'Gothic', sans-serif;
+  padding: 6px 10px 1px 10px;
+  float: left;
+  width: 80%;
+}
+
+.container .main-section .card li .view {
+  margin-right: 2px;
+  vertical-align: 10;
+}
+
+.container .main-section .card li .additional {
+  padding: 1px 10px 6px 10px;
+}
+
+.container .main-section .card li .time {
+  float: right;
+  font-size: 0.7rem;
+  margin-right: 10px;
+}
+
+.container .main-section .card li .time .count {
+  color: #808080;
+  font-family: monospace;
+}
+
+.container .main-section .card li .time img {
+  vertical-align: bottom;
+}
+
+.container .main-section .card li:first-child {
+  border: 0;
+}
+
+.container .main-section .card .tag-container {
+  float: left;
+  width: 200px;
+}
+
+.container .main-section .card .tag-container .tag {
+  padding: 2px 4px;
+  background-color: #0090ee;
+  color: white;
+  border-radius: 4px;
+  font-family: 'Fira Mono' ,monospace;
+  line-height: 1.4;
+  font-size: 0.60rem;
+  font-weight: 600;
+}
+
+.container .main-section .card .additional::after {
+  display: block;
+  content: '';
+  clear: both;
+}
