@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
+const {sequelize} = require('./model')
 
 const morgan = require('morgan')
 const cors = require('cors')
@@ -18,4 +19,7 @@ app.use(cookieParser())
 app.use(morgan("combined"))
 require('./router/post_router')(app)
 
-app.listen(8000)
+sequelize.sync()
+  .then(() => {
+    app.listen(8000)
+  })

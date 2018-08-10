@@ -26,3 +26,4 @@
 /.nb-gradle/
 
 /server/node_modules
+/server/src/config
