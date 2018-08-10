@@ -1,7 +1,6 @@
+const postHandler = require('../controllers/post_controller')
 module.exports = (app) => {
-  app.route('/post/:id')
-    .post(function (req, res) {
-      console.log(req.body)
-      res.send({post: req.body})
-    })
+  app.route('/posts')
+    .post(postHandler.create) // new post
+    .get(postHandler.all)
 }
