@@ -1,7 +1,7 @@
 <template>
 <div id="board" class="container">
-<input class="title"/>
-<input class="content"/>
+<input v-model="title"/>
+<input v-model="content"/>
 <button @click="write">write</button>
 </div>
 </template>
