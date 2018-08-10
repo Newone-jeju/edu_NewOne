@@ -4,6 +4,7 @@
   "description": "express server",
   "main": "index.js",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.4",
