@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/index'
 import MainNav from '@/components/MainNav'
-import posts from '@/components/posts/posts'
+import NewPost from '@/components/posts/new'
 import all from '@/components/posts/all'
+import login from '@/components/login'
 
 Vue.use(Router)
 
@@ -22,7 +23,7 @@ export default new Router({
       path: '/community/new',
       name: 'new_community_path',
       components: {
-        'default': posts,
+        'default': NewPost,
         'MainNav': MainNav
       }
     },
@@ -31,6 +32,14 @@ export default new Router({
       name: 'community_path',
       components: {
         'default': all,
+        'MainNav': MainNav
+      }
+    },
+    {
+      path: '/login',
+      name: 'login_path',
+      components: {
+        'default': login,
         'MainNav': MainNav
       }
     }
