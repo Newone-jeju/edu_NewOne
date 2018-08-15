@@ -6,7 +6,7 @@
       <button @click="login" type="submit">login</button>
     </div>
     <div class="test">
-      {{ testId }} {{ testPassword }}
+      {{ testId }} {{ testPassword }} {{ jwt }}
     </div>
   </div>
 </template>
@@ -19,7 +19,8 @@ export default {
       id: '',
       password: '',
       testId: '',
-      testPassword: ''
+      testPassword: '',
+      jwt: ''
     }
   },
   methods: {
@@ -31,6 +32,7 @@ export default {
         .then(res => {
           this.testId = res.data.id
           this.testPassword = res.data.password
+          this.jwt = res.data.token
         })
     }
   }
