@@ -42,10 +42,9 @@ export default new Vuex.Store({
       storage: {
         getItem: key => Cookies.get(key),
         setItem: (key, value) => {
-          Cookies.set(key, value, { expires: 3, secure: false })
+          Cookies.set(key, value, { secure: false })
         },
         removeItem: key => {
-          console.log(123)
           Cookies.remove(key)
         }
       }
