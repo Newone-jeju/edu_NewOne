@@ -5,6 +5,9 @@
       <input type="password" v-model="password">
       <button @click="login" type="submit">login</button>
     </div>
+    <div class="test">
+      {{ testId }} {{ testPassword }}
+    </div>
   </div>
 </template>
 
@@ -14,15 +17,21 @@ export default {
   data () {
     return {
       id: '',
-      password: ''
+      password: '',
+      testId: '',
+      testPassword: ''
     }
   },
   methods: {
-    login () {
-      auth.login({
+    async login () {
+      await auth.login({
         id: this.id,
         password: this.password
       })
+        .then(res => {
+          this.testId = res.data.id
+          this.testPassword = res.data.password
+        })
     }
   }
 }
