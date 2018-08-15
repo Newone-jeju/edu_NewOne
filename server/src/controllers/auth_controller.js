@@ -4,6 +4,7 @@ module.exports = {
   login (req, res) {
     auth.login(req.body.id, req.body.password)
       .then(token => {
+        console.log(token)
         res.status(200).send({token: token})
       })
       .catch(err => {
