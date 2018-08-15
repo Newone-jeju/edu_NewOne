@@ -32,7 +32,6 @@ module.exports = {
               const payload = {id: user.id, name: user.name}
               jwtService.getJwt(payload)
                 .then(token => {
-                  console.log(payload)
                   resolve({token: token, name: payload.name})
                 })
             } else {
