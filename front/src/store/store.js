@@ -42,9 +42,13 @@ export default new Vuex.Store({
     createPersisedState({
       storage: {
         getItem: key => Cookies.get(key),
-        // Please see https://github.com/js-cookie/js-cookie#json, on how to handle JSON.
-        setItem: (key, value) => Cookies.set(key, value, { expires: 3, secure: true }),
-        removeItem: key => Cookies.remove(key)
+        setItem: (key, value) => {
+          Cookies.set(key, value, { expires: 3, secure: false })
+        },
+        removeItem: key => {
+          console.log(123)
+          Cookies.remove(key)
+        }
       }
     })
   ]
