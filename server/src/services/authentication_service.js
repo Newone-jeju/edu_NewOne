@@ -32,7 +32,8 @@ module.exports = {
               const payload = {id: user.id, name: user.name}
               jwtService.getJwt(payload)
                 .then(token => {
-                  resolve(token)
+                  console.log(payload)
+                  resolve({token: token, name: payload.name})
                 })
             } else {
               reject({err: 'Password is not correct', code: 401})
