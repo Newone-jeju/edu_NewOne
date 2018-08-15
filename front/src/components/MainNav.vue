@@ -10,7 +10,8 @@
             </a>
           </div>
           <ul class="sub-category-container">
-            <li class="sub-category-wrapper center need-login" @click="login">로그인</li>
+            <li v-if="!user" class="sub-category-wrapper center need-login" @click="login">로그인</li>
+            <li v-if="user" class="sub-category-wrapper center need-login" @click="logout">로그아웃</li>
           </ul>
         </li>
         <li class="main-category-wrapper">
@@ -111,17 +112,33 @@
 export default {
   data () {
     return {
+      user: null
     }
   },
   methods: {
     login () {
       location.href = './login'
+    },
+    checkUser () {
+      this.user = this.$store.state.name
+    },
+    logout () {
+      console.log(456)
+      this.$store.dispatch('removeToken')
+      this.$store.dispatch('removeName')
+      location.href = '/'
     }
+  },
+  beforeMount () {
+    this.checkUser()
   }
 }
 </script>
 
 <style>
+  #nav-wrapper {
+    z-index: 1000;
+  }
   .need-login {
     cursor: pointer;
   }
