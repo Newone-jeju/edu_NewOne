@@ -3,9 +3,10 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default Vuex.Store({
+export default new Vuex.Store({
   state: {
-    token: null
+    token: null,
+    name: null
   },
   mutations: {
     setToken (state, token) {
@@ -13,6 +14,12 @@ export default Vuex.Store({
     },
     removeToken (state) {
       state.token = null
+    },
+    setName (state, name) {
+      state.name = name
+    },
+    removeName (state) {
+      state.name = null
     }
   },
   actions: {
@@ -21,6 +28,12 @@ export default Vuex.Store({
     },
     removeToken (context) {
       context.commit('removeToken')
+    },
+    setName (context, name) {
+      context.commit('setName', name)
+    },
+    removeName (context) {
+      context.commit('removeName')
     }
   }
 })

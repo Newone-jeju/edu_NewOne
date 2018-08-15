@@ -10,7 +10,7 @@
             </a>
           </div>
           <ul class="sub-category-container">
-            <li class="sub-category-wrapper center">New_One 님 환영합니다!</li>
+            <li class="sub-category-wrapper center need-login" @click="login">로그인</li>
           </ul>
         </li>
         <li class="main-category-wrapper">
@@ -109,8 +109,20 @@
 
 <script>
 export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+    login () {
+      location.href = './login'
+    }
+  }
 }
 </script>
 
 <style>
+  .need-login {
+    cursor: pointer;
+  }
 </style>

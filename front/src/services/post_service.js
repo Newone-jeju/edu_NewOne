@@ -1,8 +1,8 @@
 import http from './http'
 
 export default {
-  create (credentials) {
-    return http().post('posts', credentials)
+  create (credentials, header) {
+    return http().post('posts')
   },
   all () {
     return http().get('posts')
