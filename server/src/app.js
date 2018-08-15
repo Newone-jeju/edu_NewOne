@@ -18,6 +18,7 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 app.use(morgan("combined"))
 require('./router/post_router')(app)
+require('./router/auth_router')(app)
 
 sequelize.sync()
   .then(() => {
