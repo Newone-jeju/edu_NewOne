@@ -4,7 +4,6 @@ import createPersisedState from 'vuex-persistedstate'
 import Cookies from 'js-cookie'
 
 Vue.use(Vuex)
-
 export default new Vuex.Store({
   state: {
     token: null,
