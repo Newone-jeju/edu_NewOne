@@ -84,7 +84,7 @@
             <li class="sub-category-wrapper">
               <a href="" class="sub-category">
                 <div class="link-outer">
-                  <div class="link-inner">자유게시판</div>
+                  <div class="link-inner" @click="community">자유게시판</div>
                 </div>
               </a>
             </li>
@@ -127,6 +127,10 @@ export default {
       this.$store.dispatch('removeToken')
       this.$store.dispatch('removeName')
       location.href = '/'
+    },
+    community () {
+      console.log(1)
+      this.$router.push({name: 'community_path'})
     }
   },
   beforeMount () {

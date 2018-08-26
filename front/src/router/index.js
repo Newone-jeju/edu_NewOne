@@ -39,8 +39,7 @@ export default new Router({
       path: '/login',
       name: 'login_path',
       components: {
-        'default': login,
-        'MainNav': MainNav
+        'default': login
       }
     }
   ]
